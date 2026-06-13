@@ -1,0 +1,271 @@
+{
+  "results": [
+    {
+      "task": "src/billing/totals.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": true,
+      "pass": true,
+      "cost": 0.0154006,
+      "requests": 2,
+      "retrievalCalls": 0,
+      "hitRate": 0.9996036773810673,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/net/retry.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": true,
+      "pass": true,
+      "cost": 0.0141674,
+      "requests": 2,
+      "retrievalCalls": 0,
+      "hitRate": 0.9997021370128656,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/text/dates.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": true,
+      "pass": true,
+      "cost": 0.0304366,
+      "requests": 4,
+      "retrievalCalls": 0,
+      "hitRate": 0.9993938803452113,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/billing/totals.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": true,
+      "pass": true,
+      "cost": 0.0153916,
+      "requests": 2,
+      "retrievalCalls": 0,
+      "hitRate": 0.9995400486234313,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/net/retry.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": true,
+      "pass": true,
+      "cost": 0.0140804,
+      "requests": 2,
+      "retrievalCalls": 0,
+      "hitRate": 0.9997000834014651,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/text/dates.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": true,
+      "pass": true,
+      "cost": 0.030989199999999998,
+      "requests": 4,
+      "retrievalCalls": 0,
+      "hitRate": 0.9994484234959288,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/billing/totals.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": true,
+      "pass": true,
+      "cost": 0.0164418,
+      "requests": 2,
+      "retrievalCalls": 0,
+      "hitRate": 0.9996160944695021,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/net/retry.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": true,
+      "pass": true,
+      "cost": 0.0141464,
+      "requests": 2,
+      "retrievalCalls": 0,
+      "hitRate": 0.9997000834014651,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/text/dates.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": true,
+      "pass": true,
+      "cost": 0.030292600000000003,
+      "requests": 4,
+      "retrievalCalls": 0,
+      "hitRate": 0.99941643000801,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/billing/totals.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": true,
+      "pass": true,
+      "cost": 0.015169599999999998,
+      "requests": 2,
+      "retrievalCalls": 0,
+      "hitRate": 0.9996303628194281,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/net/retry.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": true,
+      "pass": true,
+      "cost": 0.0141854,
+      "requests": 2,
+      "retrievalCalls": 0,
+      "hitRate": 0.9996980297985016,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/text/dates.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": true,
+      "pass": true,
+      "cost": 0.0161358,
+      "requests": 2,
+      "retrievalCalls": 0,
+      "hitRate": 0.9995545327828973,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/billing/totals.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": false,
+      "pass": true,
+      "cost": 0.0130822,
+      "requests": 3,
+      "retrievalCalls": 3,
+      "hitRate": 0.6392983311000122,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/net/retry.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": false,
+      "pass": true,
+      "cost": 0.004937199999999999,
+      "requests": 3,
+      "retrievalCalls": 2,
+      "hitRate": 0.8058111380145279,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/text/dates.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": false,
+      "pass": true,
+      "cost": 0.011168999999999998,
+      "requests": 5,
+      "retrievalCalls": 2,
+      "hitRate": 0.8485250248591316,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/billing/totals.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": false,
+      "pass": true,
+      "cost": 0.0044992,
+      "requests": 3,
+      "retrievalCalls": 1,
+      "hitRate": 0.8311688311688312,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/net/retry.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": false,
+      "pass": true,
+      "cost": 0.005104399999999999,
+      "requests": 4,
+      "retrievalCalls": 2,
+      "hitRate": 0.8607778989458379,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/text/dates.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": false,
+      "pass": true,
+      "cost": 0.010412,
+      "requests": 5,
+      "retrievalCalls": 2,
+      "hitRate": 0.8268733850129198,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/billing/totals.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": false,
+      "pass": true,
+      "cost": 0.006688600000000001,
+      "requests": 4,
+      "retrievalCalls": 3,
+      "hitRate": 0.8181665264928512,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/net/retry.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": false,
+      "pass": true,
+      "cost": 0.0044594000000000005,
+      "requests": 4,
+      "retrievalCalls": 2,
+      "hitRate": 0.8662886409365282,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/text/dates.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": false,
+      "pass": true,
+      "cost": 0.011241000000000001,
+      "requests": 5,
+      "retrievalCalls": 1,
+      "hitRate": 0.8599261001007726,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/billing/totals.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": false,
+      "pass": true,
+      "cost": 0.012433999999999999,
+      "requests": 4,
+      "retrievalCalls": 3,
+      "hitRate": 0.769362871372145,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/net/retry.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": false,
+      "pass": true,
+      "cost": 0.0042112,
+      "requests": 3,
+      "retrievalCalls": 2,
+      "hitRate": 0.8253968253968254,
+      "digestTokens": 222420
+    },
+    {
+      "task": "src/text/dates.mjs",
+      "model": "deepseek-v4-pro",
+      "repoMode": false,
+      "pass": true,
+      "cost": 0.0179904,
+      "requests": 5,
+      "retrievalCalls": 3,
+      "hitRate": 0.8314687838325514,
+      "digestTokens": 222420
+    }
+  ],
+  "totalCost": 0.33306600000000003,
+  "digestTokens": 222420,
+  "passRate": 1
+}

@@ -1,0 +1,62 @@
+{
+  "search": [
+    {
+      "name": "find-fix-discount",
+      "mode": "search",
+      "pass": true,
+      "cost": 0.0032320800000000005,
+      "requests": 6,
+      "retrievalCalls": 5,
+      "hitRateFrom2": 0.849933598937583
+    },
+    {
+      "name": "find-bump-retries",
+      "mode": "search",
+      "pass": true,
+      "cost": 0.0013851600000000003,
+      "requests": 4,
+      "retrievalCalls": 2,
+      "hitRateFrom2": 0.8594724220623501
+    },
+    {
+      "name": "find-extend-dates",
+      "mode": "search",
+      "pass": true,
+      "cost": 0.00413604,
+      "requests": 5,
+      "retrievalCalls": 3,
+      "hitRateFrom2": 0.810126582278481
+    }
+  ],
+  "repo": [
+    {
+      "name": "find-fix-discount",
+      "mode": "repo",
+      "pass": true,
+      "cost": 0.00462888,
+      "requests": 3,
+      "retrievalCalls": 1,
+      "hitRateFrom2": 0.9386281588447654
+    },
+    {
+      "name": "find-bump-retries",
+      "mode": "repo",
+      "pass": true,
+      "cost": 0.00387984,
+      "requests": 2,
+      "retrievalCalls": 0,
+      "hitRateFrom2": 0.932111815832746
+    },
+    {
+      "name": "find-extend-dates",
+      "mode": "repo",
+      "pass": true,
+      "cost": 0.00249688,
+      "requests": 5,
+      "retrievalCalls": 1,
+      "hitRateFrom2": 0.9751596115671441
+    }
+  ],
+  "digestTokens": 3479,
+  "digestFiles": 33
+}

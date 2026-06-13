@@ -1,0 +1,102 @@
+/*
+ * Design tokens. Dark is the default (developer
+ * audience); light overrides under [data-theme='light']. All UI reads
+ * these vars — no hardcoded colors/sizes in components.
+ *
+ * Language: cool blue-gray neutrals (not pure gray), THREE background
+ * elevations doing the separation work instead of borders, one accent.
+ */
+:root {
+  /* Neutrals (dark) — cool family, elevation 0/1/2/3 */
+  --bg-0: #0e1015; /* page */
+  --bg-1: #14171d; /* panels / sidebar / cards */
+  --bg-2: #1a1e26; /* hover */
+  --bg-3: #232834; /* active */
+  --border: #20242e; /* hairline — use sparingly */
+  --border-strong: #2e3442;
+  --text-0: #e8eaf0; /* primary */
+  --text-1: #9aa2b1; /* secondary */
+  --text-2: #646b7a; /* muted */
+
+  /* Single accent — DeepSeek blue */
+  --accent: #4a7dff;
+  --accent-hover: #6d96ff;
+  --accent-contrast: #ffffff;
+
+  /* Semantic */
+  --success: #3ecf8e;
+  --warning: #e6a23c;
+  --danger: #ff6b6b;
+
+  /* Elevation shadows (cards lift with light, overlays with depth) */
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow-2: 0 12px 40px rgba(0, 0, 0, 0.45);
+
+  /* Radii — three steps only */
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+
+  /* Spacing — 4pt scale */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+
+  /* Font sizes */
+  --fs-title: 15px; /* session title */
+  --fs-body: 14px; /* chat body / replies */
+  --fs-code: 13px; /* code / diff */
+  --fs-ui: 13px; /* sidebar items, inputs */
+  --fs-meta: 12px; /* timestamps, status bar, card meta */
+  --fs-badge: 11px; /* badges (smallest) */
+  --fs-stat: 26px; /* dashboard big numbers */
+  --lh-body: 1.75;
+  --lh-code: 1.6;
+
+  /* Fonts — Inter (OFL) for latin/digits, system CJK by reference only. */
+  --font-sans:
+    'Inter', 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Cascadia Code', 'Consolas', 'SF Mono', monospace;
+
+  /* Chrome */
+  --titlebar-h: 36px;
+  --sidebar-w: 232px;
+
+  /* Motion (视觉系统): one shared easing language. */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Glass: ONE recipe everywhere. Tinted with the PAGE color so the
+     surface never reads brighter than its surroundings ("强行打亮" feedback)
+     — the glassiness comes from the blur + hairline, not a lightness lift. */
+  --glass-bg: color-mix(in srgb, var(--bg-0) 62%, transparent);
+  --glass-border: color-mix(in srgb, var(--text-0) 8%, transparent);
+  /* Floating layers (menus/dialogs) need more opacity to stay readable. */
+  --glass-strong: color-mix(in srgb, var(--bg-1) 86%, transparent);
+}
+
+[data-theme='light'] {
+  --bg-0: #ffffff;
+  --bg-1: #f6f7f9;
+  --bg-2: #eceef2;
+  --bg-3: #e2e5eb;
+  --border: #e7e9ee;
+  --border-strong: #d6d9e0;
+  --text-0: #16181d;
+  --text-1: #555b66;
+  --text-2: #8b919e;
+
+  --accent: #3b6df0;
+  --accent-hover: #2f5fd8;
+
+  --success: #18935f;
+  --warning: #c77c1f;
+  --danger: #e23b3b;
+
+  --shadow-1: 0 1px 2px rgba(20, 24, 33, 0.07);
+  --shadow-2: 0 12px 40px rgba(20, 24, 33, 0.16);
+}

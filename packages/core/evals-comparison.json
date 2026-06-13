@@ -1,0 +1,240 @@
+{
+  "auto": {
+    "passRate": 1,
+    "passed": 5,
+    "total": 5,
+    "totalCost": 0.00597524,
+    "avgHitRate": 0.8713077905931839,
+    "editLevels": {
+      "exact": 5,
+      "tolerant": 0,
+      "failed": 0
+    },
+    "cases": [
+      {
+        "name": "bugfix-sum",
+        "category": "bugfix",
+        "pass": true,
+        "cost": 0.00092188,
+        "hitRate": 0.8774962742175857,
+        "turns": 3,
+        "editLevels": {
+          "exact": 1,
+          "tolerant": 0,
+          "failed": 0
+        }
+      },
+      {
+        "name": "bugfix-offbyone",
+        "category": "bugfix",
+        "pass": true,
+        "cost": 0.0010378800000000001,
+        "hitRate": 0.8743688743688743,
+        "turns": 3,
+        "editLevels": {
+          "exact": 1,
+          "tolerant": 0,
+          "failed": 0
+        }
+      },
+      {
+        "name": "feature-clamp",
+        "category": "feature",
+        "pass": true,
+        "cost": 0.00128932,
+        "hitRate": 0.8164685416062627,
+        "turns": 3,
+        "editLevels": {
+          "exact": 1,
+          "tolerant": 0,
+          "failed": 0
+        }
+      },
+      {
+        "name": "test-add",
+        "category": "test",
+        "pass": true,
+        "cost": 0.00130516,
+        "hitRate": 0.9155573216769323,
+        "turns": 4,
+        "editLevels": {
+          "exact": 0,
+          "tolerant": 0,
+          "failed": 0
+        }
+      },
+      {
+        "name": "refactor-rename",
+        "category": "refactor",
+        "pass": true,
+        "cost": 0.001421,
+        "hitRate": 0.872647941096264,
+        "turns": 3,
+        "editLevels": {
+          "exact": 2,
+          "tolerant": 0,
+          "failed": 0
+        }
+      }
+    ]
+  },
+  "flash": {
+    "passRate": 1,
+    "passed": 5,
+    "total": 5,
+    "totalCost": 0.006851639999999999,
+    "avgHitRate": 0.887788907189153,
+    "editLevels": {
+      "exact": 5,
+      "tolerant": 0,
+      "failed": 0
+    },
+    "cases": [
+      {
+        "name": "bugfix-sum",
+        "category": "bugfix",
+        "pass": true,
+        "cost": 0.00091688,
+        "hitRate": 0.8761904761904762,
+        "turns": 3,
+        "editLevels": {
+          "exact": 1,
+          "tolerant": 0,
+          "failed": 0
+        }
+      },
+      {
+        "name": "bugfix-offbyone",
+        "category": "bugfix",
+        "pass": true,
+        "cost": 0.00130048,
+        "hitRate": 0.88,
+        "turns": 4,
+        "editLevels": {
+          "exact": 1,
+          "tolerant": 0,
+          "failed": 0
+        }
+      },
+      {
+        "name": "feature-clamp",
+        "category": "feature",
+        "pass": true,
+        "cost": 0.00097,
+        "hitRate": 0.9248554913294798,
+        "turns": 3,
+        "editLevels": {
+          "exact": 1,
+          "tolerant": 0,
+          "failed": 0
+        }
+      },
+      {
+        "name": "test-add",
+        "category": "test",
+        "pass": true,
+        "cost": 0.00251716,
+        "hitRate": 0.8177462289263532,
+        "turns": 4,
+        "editLevels": {
+          "exact": 0,
+          "tolerant": 0,
+          "failed": 0
+        }
+      },
+      {
+        "name": "refactor-rename",
+        "category": "refactor",
+        "pass": true,
+        "cost": 0.00114712,
+        "hitRate": 0.940152339499456,
+        "turns": 3,
+        "editLevels": {
+          "exact": 2,
+          "tolerant": 0,
+          "failed": 0
+        }
+      }
+    ]
+  },
+  "pro": {
+    "passRate": 1,
+    "passed": 5,
+    "total": 5,
+    "totalCost": 0.023908600000000002,
+    "avgHitRate": 0.8242262587426777,
+    "editLevels": {
+      "exact": 5,
+      "tolerant": 0,
+      "failed": 0
+    },
+    "cases": [
+      {
+        "name": "bugfix-sum",
+        "category": "bugfix",
+        "pass": true,
+        "cost": 0.0033943999999999997,
+        "hitRate": 0.8292108362779741,
+        "turns": 3,
+        "editLevels": {
+          "exact": 1,
+          "tolerant": 0,
+          "failed": 0
+        }
+      },
+      {
+        "name": "bugfix-offbyone",
+        "category": "bugfix",
+        "pass": true,
+        "cost": 0.0040064,
+        "hitRate": 0.812933025404157,
+        "turns": 3,
+        "editLevels": {
+          "exact": 1,
+          "tolerant": 0,
+          "failed": 0
+        }
+      },
+      {
+        "name": "feature-clamp",
+        "category": "feature",
+        "pass": true,
+        "cost": 0.0054124,
+        "hitRate": 0.8244766505636071,
+        "turns": 4,
+        "editLevels": {
+          "exact": 1,
+          "tolerant": 0,
+          "failed": 0
+        }
+      },
+      {
+        "name": "test-add",
+        "category": "test",
+        "pass": true,
+        "cost": 0.0058408,
+        "hitRate": 0.8645993245317777,
+        "turns": 5,
+        "editLevels": {
+          "exact": 0,
+          "tolerant": 0,
+          "failed": 0
+        }
+      },
+      {
+        "name": "refactor-rename",
+        "category": "refactor",
+        "pass": true,
+        "cost": 0.0052546,
+        "hitRate": 0.7899114569358734,
+        "turns": 3,
+        "editLevels": {
+          "exact": 2,
+          "tolerant": 0,
+          "failed": 0
+        }
+      }
+    ]
+  },
+  "savedVsPro": 0.7500798875718361
+}

@@ -1,0 +1,78 @@
+{
+  "model": "deepseek-v4-flash",
+  "turns": [
+    {
+      "step": 1,
+      "pass": true,
+      "cumulativeHitRate": 0.8982456140350877,
+      "stepHitRate": 0.8982456140350877,
+      "cost": 0.00115416
+    },
+    {
+      "step": 2,
+      "pass": true,
+      "cumulativeHitRate": 0.8683677602268125,
+      "stepHitRate": 0.8360724820901813,
+      "cost": 0.00126936
+    },
+    {
+      "step": 3,
+      "pass": true,
+      "cumulativeHitRate": 0.8709175738724728,
+      "stepHitRate": 0.8754499640028798,
+      "cost": 0.00119728
+    },
+    {
+      "step": 4,
+      "pass": true,
+      "cumulativeHitRate": 0.8843850760018425,
+      "stepHitRate": 0.9174896463841988,
+      "cost": 0.0011012
+    },
+    {
+      "step": 5,
+      "pass": true,
+      "cumulativeHitRate": 0.8812559107244183,
+      "stepHitRate": 0.8668783068783069,
+      "cost": 0.00111492
+    },
+    {
+      "step": 6,
+      "pass": true,
+      "cumulativeHitRate": 0.8942933333333334,
+      "stepHitRate": 0.9254405784003615,
+      "cost": 0.0017458
+    },
+    {
+      "step": 7,
+      "pass": true,
+      "cumulativeHitRate": 0.8878140044262931,
+      "stepHitRate": 0.8494232896192131,
+      "cost": 0.00150652
+    },
+    {
+      "step": 8,
+      "pass": true,
+      "cumulativeHitRate": 0.9012525084769221,
+      "stepHitRate": 0.9433989266547406,
+      "cost": 0.00167268
+    },
+    {
+      "step": 9,
+      "pass": true,
+      "cumulativeHitRate": 0.9016845329249618,
+      "stepHitRate": 0.9050160085378869,
+      "cost": 0.00116168
+    },
+    {
+      "step": 10,
+      "pass": true,
+      "cumulativeHitRate": 0.9065106231713653,
+      "stepHitRate": 0.9466972711043101,
+      "cost": 0.00084048
+    }
+  ],
+  "finalCumulativeHitRate": 0.9065106231713653,
+  "totalCost": 0.01276408,
+  "passRate": 1
+}

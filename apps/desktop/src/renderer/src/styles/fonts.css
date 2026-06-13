@@ -1,0 +1,23 @@
+/*
+ * Bundled fonts. Both are SIL Open Font License 1.1 — free for
+ * commercial use and redistribution; see licenses/ and THIRD-PARTY-NOTICES.md.
+ *   Inter — Copyright 2016 The Inter Project Authors (https://rsms.me/inter)
+ *   JetBrains Mono — Copyright 2020 The JetBrains Mono Project Authors
+ *     (https://github.com/JetBrains/JetBrainsMono)
+ * CJK stays on the user's installed system fonts (referenced by name only —
+ * nothing redistributed).
+ */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('../assets/fonts/InterVariable.woff2') format('woff2-variations');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+}
