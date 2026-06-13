@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+out/
+build/
+.vite/
+release/
+
+# ...but keep packaging resources (the build/ rule above is for OUTPUT dirs;
+# apps/desktop/build/ holds the app icon, which electron-builder needs)
+!apps/desktop/build/
+!apps/desktop/build/**
+
+# Electron
+*.asar
+
+# Logs
+logs/
+*.log
+*.log.*
+*.jsonl
+
+# Environment & secrets
+.env
+.env.*
+*.local
+*.local.*
+
+# Local research / scratch (not tracked)
+research/
+
+# Internal AI-assistant dev guide — kept locally, not published
+CLAUDE.md
+
+# SQLite databases (user data, not source)
+*.db
+*.db-shm
+*.db-wal
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/settings.json
+.idea/
+*.suo
+*.user
+
+# Temp
+*.tmp
+*.temp
+
+# eval fixtures imported at runtime must live in-root (vite-node)
+.eval-tmp-*/
+*.tsbuildinfo
+release/

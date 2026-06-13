@@ -1,0 +1,75 @@
+name: Release
+
+# Tag-triggered Windows release. Push a tag like `v0.4.0` to build the unsigned
+# installer, generate checksums, and open a DRAFT GitHub Release with both
+# attached — the maintainer reviews the notes, then publishes from the UI.
+#
+# Code signing is intentionally not done yet (see CLAUDE.md / README): an
+# unsigned installer triggers a one-time SmartScreen prompt on first launch.
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      # install runs the desktop postinstall (electron-builder install-app-deps),
+      # which rebuilds better-sqlite3 against Electron's ABI.
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Build + package (unsigned)
+        run: pnpm -F @vibeseek/desktop run dist
+
+      # electron-builder.yml stamps test packages with a `-test` suffix. A real
+      # release drops it — rename here rather than forking the build config so
+      # CI keeps producing clearly-labelled test artifacts.
+      - name: Strip -test suffix from installer
+        shell: pwsh
+        run: |
+          $rel = 'apps/desktop/release'
+          Get-ChildItem "$rel/*-test.exe" | ForEach-Object {
+            $clean = $_.Name -replace '-test\.exe$', '.exe'
+            Rename-Item -LiteralPath $_.FullName -NewName $clean
+            Write-Host "renamed $($_.Name) -> $clean"
+          }
+
+      - name: Generate SHA256SUMS.txt
+        shell: pwsh
+        run: |
+          $rel = 'apps/desktop/release'
+          $lines = Get-ChildItem "$rel/*.exe" | ForEach-Object {
+            $hash = (Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash.ToLower()
+            "$hash  $($_.Name)"
+          }
+          $lines | Set-Content -LiteralPath "$rel/SHA256SUMS.txt" -Encoding ascii
+          Write-Host '--- SHA256SUMS.txt ---'
+          Get-Content "$rel/SHA256SUMS.txt"
+
+      - name: Create draft release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "$env:GITHUB_REF_NAME" `
+            (Get-Item apps/desktop/release/*.exe).FullName `
+            apps/desktop/release/SHA256SUMS.txt `
+            --draft `
+            --title "VibeSeek $env:GITHUB_REF_NAME" `
+            --notes-file .github/RELEASE_NOTES.md

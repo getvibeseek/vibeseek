@@ -1,0 +1,79 @@
+{
+  "passRate": 1,
+  "passed": 5,
+  "total": 5,
+  "totalCost": 0.00755092,
+  "avgHitRate": 0.851481195005228,
+  "editLevels": {
+    "exact": 5,
+    "tolerant": 0,
+    "failed": 0
+  },
+  "cases": [
+    {
+      "name": "bugfix-sum",
+      "category": "bugfix",
+      "pass": true,
+      "cost": 0.0008960000000000001,
+      "hitRate": 0.8771929824561403,
+      "turns": 3,
+      "editLevels": {
+        "exact": 1,
+        "tolerant": 0,
+        "failed": 0
+      }
+    },
+    {
+      "name": "bugfix-offbyone",
+      "category": "bugfix",
+      "pass": true,
+      "cost": 0.0015596,
+      "hitRate": 0.8628659476117103,
+      "turns": 4,
+      "editLevels": {
+        "exact": 1,
+        "tolerant": 0,
+        "failed": 0
+      }
+    },
+    {
+      "name": "feature-clamp",
+      "category": "feature",
+      "pass": true,
+      "cost": 0.0012699999999999999,
+      "hitRate": 0.849707912904939,
+      "turns": 3,
+      "editLevels": {
+        "exact": 1,
+        "tolerant": 0,
+        "failed": 0
+      }
+    },
+    {
+      "name": "test-add",
+      "category": "test",
+      "pass": true,
+      "cost": 0.00219932,
+      "hitRate": 0.8571021513036045,
+      "turns": 5,
+      "editLevels": {
+        "exact": 0,
+        "tolerant": 0,
+        "failed": 0
+      }
+    },
+    {
+      "name": "refactor-rename",
+      "category": "refactor",
+      "pass": true,
+      "cost": 0.0016259999999999998,
+      "hitRate": 0.8105369807497467,
+      "turns": 3,
+      "editLevels": {
+        "exact": 2,
+        "tolerant": 0,
+        "failed": 0
+      }
+    }
+  ]
+}

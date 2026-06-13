@@ -1,0 +1,52 @@
+# Packaging (测试包). Tuned for INSTALL + FIRST-LAUNCH speed on machines
+# that have never seen the app (user-reported pain with past tools):
+#  - asar on (default): one archive instead of thousands of files → Defender's
+#    first-launch scan is dramatically faster. Only native .node files are
+#    unpacked (they must be real files to dlopen).
+#  - NSIS ONE-CLICK, per-user: no UAC, no wizard — installs in seconds.
+#  - NEVER a portable target: portable exes re-extract to %TEMP% on EVERY
+#    launch — the classic "first start is crazy slow" trap.
+#  - electronLanguages trimmed: drops ~50 unused Chromium locale packs.
+#  - runtime deps = better-sqlite3 only (everything else is Vite-bundled).
+appId: dev.vibeseek.app
+productName: VibeSeek
+# Force the install folder / shortcuts to read "VibeSeek", not the scoped
+# package name (@vibeseekdesktop) NSIS would otherwise derive.
+executableName: VibeSeek
+compression: normal
+directories:
+  output: release
+  buildResources: build
+files:
+  - out/**/*
+  - package.json
+  - '!**/*.map'
+asar: true
+asarUnpack:
+  - '**/*.node'
+electronLanguages:
+  - zh-CN
+  - en-US
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: build/icon.ico
+  artifactName: ${productName}-Setup-${version}-test.${ext}
+nsis:
+  # Wizard install (user feedback: a silent one-click that picks the folder for
+  # you feels presumptuous). Welcome → choose folder → shortcuts → install.
+  # This only affects the ~few install seconds, NOT launch speed.
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  runAfterFinish: true
+  deleteAppDataOnUninstall: false
+  shortcutName: VibeSeek
+  menuCategory: false
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+# macOS config arrives with the mac release (needs signing); Windows only now.

@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      # install runs the desktop postinstall (electron-builder install-app-deps),
+      # which rebuilds better-sqlite3 against Electron's ABI.
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Test
+        run: pnpm test
+
+      - name: Typecheck
+        run: pnpm -r --if-present typecheck
+
+      - name: Build + package (unsigned)
+        run: pnpm -F @vibeseek/desktop run dist
+
+      - name: Upload installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: vibeseek-windows
+          path: apps/desktop/release/*.exe
+          if-no-files-found: error

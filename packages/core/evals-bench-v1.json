@@ -1,0 +1,2004 @@
+{
+  "repeats": 2,
+  "total": 32,
+  "columns": {
+    "auto": {
+      "pass": 64,
+      "runs": 64,
+      "passRate": 1,
+      "cost": 0.16637248000000007,
+      "hitRate": 0.8944508293250472,
+      "byCategory": {
+        "bugfix": {
+          "pass": 16,
+          "runs": 16
+        },
+        "feature": {
+          "pass": 26,
+          "runs": 26
+        },
+        "test": {
+          "pass": 8,
+          "runs": 8
+        },
+        "refactor": {
+          "pass": 14,
+          "runs": 14
+        }
+      }
+    },
+    "flash": {
+      "pass": 64,
+      "runs": 64,
+      "passRate": 1,
+      "cost": 0.14171944000000006,
+      "hitRate": 0.8955699888017917,
+      "byCategory": {
+        "bugfix": {
+          "pass": 16,
+          "runs": 16
+        },
+        "feature": {
+          "pass": 26,
+          "runs": 26
+        },
+        "test": {
+          "pass": 8,
+          "runs": 8
+        },
+        "refactor": {
+          "pass": 14,
+          "runs": 14
+        }
+      }
+    },
+    "pro": {
+      "pass": 64,
+      "runs": 64,
+      "passRate": 1,
+      "cost": 0.4176829999999999,
+      "hitRate": 0.8773164323958442,
+      "byCategory": {
+        "bugfix": {
+          "pass": 16,
+          "runs": 16
+        },
+        "feature": {
+          "pass": 26,
+          "runs": 26
+        },
+        "test": {
+          "pass": 8,
+          "runs": 8
+        },
+        "refactor": {
+          "pass": 14,
+          "runs": 14
+        }
+      }
+    }
+  },
+  "savedVsProPct": 0.601677635910487,
+  "results": [
+    {
+      "name": "bugfix-add",
+      "category": "bugfix",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0029539999999999996,
+      "requests": 3,
+      "hit": 3200,
+      "miss": 494
+    },
+    {
+      "name": "bugfix-last",
+      "category": "bugfix",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0032782,
+      "requests": 3,
+      "hit": 3328,
+      "miss": 421
+    },
+    {
+      "name": "bugfix-factorial",
+      "category": "bugfix",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0041718,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 461
+    },
+    {
+      "name": "bugfix-iseven",
+      "category": "bugfix",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0028372000000000002,
+      "requests": 3,
+      "hit": 3328,
+      "miss": 336
+    },
+    {
+      "name": "bugfix-max",
+      "category": "bugfix",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.003581,
+      "requests": 3,
+      "hit": 3200,
+      "miss": 545
+    },
+    {
+      "name": "bugfix-reverse",
+      "category": "bugfix",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0029302,
+      "requests": 3,
+      "hit": 3328,
+      "miss": 379
+    },
+    {
+      "name": "bugfix-count",
+      "category": "bugfix",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.003113,
+      "requests": 3,
+      "hit": 3200,
+      "miss": 537
+    },
+    {
+      "name": "feat-clamp",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.003185,
+      "requests": 3,
+      "hit": 3200,
+      "miss": 471
+    },
+    {
+      "name": "feat-unique",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0043484000000000005,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 592
+    },
+    {
+      "name": "feat-chunk",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.003857,
+      "requests": 3,
+      "hit": 3200,
+      "miss": 537
+    },
+    {
+      "name": "feat-capitalize",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.005605199999999999,
+      "requests": 4,
+      "hit": 4608,
+      "miss": 740
+    },
+    {
+      "name": "feat-average",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0044410000000000005,
+      "requests": 4,
+      "hit": 4480,
+      "miss": 751
+    },
+    {
+      "name": "feat-palindrome",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0052666,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 545
+    },
+    {
+      "name": "feat-titlecase-slug",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.008395600000000001,
+      "requests": 5,
+      "hit": 6784,
+      "miss": 918
+    },
+    {
+      "name": "test-sum",
+      "category": "test",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0047088,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 562
+    },
+    {
+      "name": "test-clamp",
+      "category": "test",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0058308,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 770
+    },
+    {
+      "name": "test-reverse",
+      "category": "test",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0047026,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 635
+    },
+    {
+      "name": "test-iseven",
+      "category": "test",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0041922,
+      "requests": 4,
+      "hit": 4608,
+      "miss": 665
+    },
+    {
+      "name": "refactor-rename",
+      "category": "refactor",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0042748000000000005,
+      "requests": 3,
+      "hit": 3712,
+      "miss": 382
+    },
+    {
+      "name": "refactor-extract-const",
+      "category": "refactor",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0040606,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 517
+    },
+    {
+      "name": "refactor-default-param",
+      "category": "refactor",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.004112,
+      "requests": 3,
+      "hit": 3200,
+      "miss": 616
+    },
+    {
+      "name": "refactor-arrow",
+      "category": "refactor",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0048192,
+      "requests": 4,
+      "hit": 4608,
+      "miss": 774
+    },
+    {
+      "name": "refactor-dedupe",
+      "category": "refactor",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0038449999999999995,
+      "requests": 3,
+      "hit": 3200,
+      "miss": 679
+    },
+    {
+      "name": "refactor-guard",
+      "category": "refactor",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0063406,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 863
+    },
+    {
+      "name": "hard-parse-duration",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.027935999999999996,
+      "requests": 7,
+      "hit": 19200,
+      "miss": 3298
+    },
+    {
+      "name": "hard-csv-row",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0077984000000000005,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 1094
+    },
+    {
+      "name": "hard-paginate",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0137502,
+      "requests": 5,
+      "hit": 8448,
+      "miss": 1245
+    },
+    {
+      "name": "hard-email",
+      "category": "bugfix",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.01712,
+      "requests": 7,
+      "hit": 14720,
+      "miss": 1886
+    },
+    {
+      "name": "hard-multifile-pipeline",
+      "category": "refactor",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.008078199999999999,
+      "requests": 5,
+      "hit": 7168,
+      "miss": 1113
+    },
+    {
+      "name": "hard-statemachine",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.004681599999999999,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 636
+    },
+    {
+      "name": "hard-deepget",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0075558000000000005,
+      "requests": 5,
+      "hit": 6912,
+      "miss": 803
+    },
+    {
+      "name": "hard-romans",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0093316,
+      "requests": 5,
+      "hit": 8704,
+      "miss": 526
+    },
+    {
+      "name": "bugfix-add",
+      "category": "bugfix",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0029149999999999996,
+      "requests": 3,
+      "hit": 3200,
+      "miss": 487
+    },
+    {
+      "name": "bugfix-last",
+      "category": "bugfix",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0031492,
+      "requests": 3,
+      "hit": 3328,
+      "miss": 410
+    },
+    {
+      "name": "bugfix-factorial",
+      "category": "bugfix",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0035962,
+      "requests": 3,
+      "hit": 3328,
+      "miss": 467
+    },
+    {
+      "name": "bugfix-iseven",
+      "category": "bugfix",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0025314,
+      "requests": 3,
+      "hit": 3456,
+      "miss": 259
+    },
+    {
+      "name": "bugfix-max",
+      "category": "bugfix",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0025406,
+      "requests": 3,
+      "hit": 3584,
+      "miss": 195
+    },
+    {
+      "name": "bugfix-reverse",
+      "category": "bugfix",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0028972,
+      "requests": 3,
+      "hit": 3328,
+      "miss": 376
+    },
+    {
+      "name": "bugfix-count",
+      "category": "bugfix",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0038564,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 538
+    },
+    {
+      "name": "feat-clamp",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.003293,
+      "requests": 3,
+      "hit": 3200,
+      "miss": 483
+    },
+    {
+      "name": "feat-unique",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.004477200000000001,
+      "requests": 4,
+      "hit": 4608,
+      "miss": 614
+    },
+    {
+      "name": "feat-chunk",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0044323999999999995,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 566
+    },
+    {
+      "name": "feat-capitalize",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0036708,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 372
+    },
+    {
+      "name": "feat-average",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0045342,
+      "requests": 4,
+      "hit": 4608,
+      "miss": 677
+    },
+    {
+      "name": "feat-palindrome",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.004669400000000001,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 529
+    },
+    {
+      "name": "feat-titlecase-slug",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0069316000000000004,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 698
+    },
+    {
+      "name": "test-sum",
+      "category": "test",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0044296,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 554
+    },
+    {
+      "name": "test-clamp",
+      "category": "test",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0042738,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 521
+    },
+    {
+      "name": "test-reverse",
+      "category": "test",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0044266,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 585
+    },
+    {
+      "name": "test-iseven",
+      "category": "test",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.006985600000000001,
+      "requests": 5,
+      "hit": 6784,
+      "miss": 882
+    },
+    {
+      "name": "refactor-rename",
+      "category": "refactor",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0061668,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 834
+    },
+    {
+      "name": "refactor-extract-const",
+      "category": "refactor",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0047983999999999995,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 714
+    },
+    {
+      "name": "refactor-default-param",
+      "category": "refactor",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0033232,
+      "requests": 3,
+      "hit": 3328,
+      "miss": 434
+    },
+    {
+      "name": "refactor-arrow",
+      "category": "refactor",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0036976,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 464
+    },
+    {
+      "name": "refactor-dedupe",
+      "category": "refactor",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0036915999999999997,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 572
+    },
+    {
+      "name": "refactor-guard",
+      "category": "refactor",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.006587000000000001,
+      "requests": 4,
+      "hit": 5120,
+      "miss": 837
+    },
+    {
+      "name": "hard-parse-duration",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.030303599999999997,
+      "requests": 4,
+      "hit": 8064,
+      "miss": 3240
+    },
+    {
+      "name": "hard-csv-row",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0152078,
+      "requests": 9,
+      "hit": 17792,
+      "miss": 1905
+    },
+    {
+      "name": "hard-paginate",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0114782,
+      "requests": 6,
+      "hit": 9728,
+      "miss": 1003
+    },
+    {
+      "name": "hard-email",
+      "category": "bugfix",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0147638,
+      "requests": 4,
+      "hit": 6272,
+      "miss": 1483
+    },
+    {
+      "name": "hard-multifile-pipeline",
+      "category": "refactor",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0062702,
+      "requests": 4,
+      "hit": 5888,
+      "miss": 563
+    },
+    {
+      "name": "hard-statemachine",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0044951999999999995,
+      "requests": 5,
+      "hit": 6528,
+      "miss": 566
+    },
+    {
+      "name": "hard-deepget",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0241236,
+      "requests": 7,
+      "hit": 17664,
+      "miss": 2906
+    },
+    {
+      "name": "hard-romans",
+      "category": "feature",
+      "column": "pro",
+      "pass": true,
+      "cost": 0.0080632,
+      "requests": 5,
+      "hit": 7168,
+      "miss": 862
+    },
+    {
+      "name": "bugfix-add",
+      "category": "bugfix",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.000924,
+      "requests": 3,
+      "hit": 3200,
+      "miss": 446
+    },
+    {
+      "name": "bugfix-last",
+      "category": "bugfix",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00130872,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 468
+    },
+    {
+      "name": "bugfix-factorial",
+      "category": "bugfix",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00144972,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 567
+    },
+    {
+      "name": "bugfix-iseven",
+      "category": "bugfix",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0013778400000000002,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 358
+    },
+    {
+      "name": "bugfix-max",
+      "category": "bugfix",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0011170000000000002,
+      "requests": 3,
+      "hit": 3200,
+      "miss": 499
+    },
+    {
+      "name": "bugfix-reverse",
+      "category": "bugfix",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00131816,
+      "requests": 4,
+      "hit": 4608,
+      "miss": 530
+    },
+    {
+      "name": "bugfix-count",
+      "category": "bugfix",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00111072,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 436
+    },
+    {
+      "name": "feat-clamp",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00151516,
+      "requests": 4,
+      "hit": 4608,
+      "miss": 683
+    },
+    {
+      "name": "feat-unique",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00144372,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 609
+    },
+    {
+      "name": "feat-chunk",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00170972,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 671
+    },
+    {
+      "name": "feat-capitalize",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00169912,
+      "requests": 5,
+      "hit": 6656,
+      "miss": 540
+    },
+    {
+      "name": "feat-average",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00148572,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 581
+    },
+    {
+      "name": "feat-palindrome",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00270768,
+      "requests": 5,
+      "hit": 6784,
+      "miss": 1118
+    },
+    {
+      "name": "feat-titlecase-slug",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00227844,
+      "requests": 5,
+      "hit": 6272,
+      "miss": 943
+    },
+    {
+      "name": "test-sum",
+      "category": "test",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0014657200000000002,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 573
+    },
+    {
+      "name": "test-clamp",
+      "category": "test",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00219928,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 766
+    },
+    {
+      "name": "test-reverse",
+      "category": "test",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0014337199999999999,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 579
+    },
+    {
+      "name": "test-iseven",
+      "category": "test",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00141584,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 432
+    },
+    {
+      "name": "refactor-rename",
+      "category": "refactor",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00235612,
+      "requests": 5,
+      "hit": 6656,
+      "miss": 979
+    },
+    {
+      "name": "refactor-extract-const",
+      "category": "refactor",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0015881600000000001,
+      "requests": 4,
+      "hit": 4608,
+      "miss": 748
+    },
+    {
+      "name": "refactor-default-param",
+      "category": "refactor",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00112756,
+      "requests": 3,
+      "hit": 3328,
+      "miss": 417
+    },
+    {
+      "name": "refactor-arrow",
+      "category": "refactor",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00157772,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 647
+    },
+    {
+      "name": "refactor-dedupe",
+      "category": "refactor",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0015848400000000001,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 579
+    },
+    {
+      "name": "refactor-guard",
+      "category": "refactor",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00214252,
+      "requests": 4,
+      "hit": 5376,
+      "miss": 587
+    },
+    {
+      "name": "hard-parse-duration",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00812704,
+      "requests": 7,
+      "hit": 17152,
+      "miss": 2696
+    },
+    {
+      "name": "hard-csv-row",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0057624799999999995,
+      "requests": 8,
+      "hit": 17024,
+      "miss": 2160
+    },
+    {
+      "name": "hard-paginate",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0037776399999999996,
+      "requests": 4,
+      "hit": 5632,
+      "miss": 1051
+    },
+    {
+      "name": "hard-email",
+      "category": "bugfix",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0041949199999999996,
+      "requests": 4,
+      "hit": 7296,
+      "miss": 571
+    },
+    {
+      "name": "hard-multifile-pipeline",
+      "category": "refactor",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00517996,
+      "requests": 8,
+      "hit": 18048,
+      "miss": 1727
+    },
+    {
+      "name": "hard-statemachine",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0013123999999999998,
+      "requests": 4,
+      "hit": 5120,
+      "miss": 322
+    },
+    {
+      "name": "hard-deepget",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00193896,
+      "requests": 4,
+      "hit": 5248,
+      "miss": 530
+    },
+    {
+      "name": "hard-romans",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00205152,
+      "requests": 4,
+      "hit": 5376,
+      "miss": 484
+    },
+    {
+      "name": "bugfix-add",
+      "category": "bugfix",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0007975599999999999,
+      "requests": 3,
+      "hit": 3328,
+      "miss": 313
+    },
+    {
+      "name": "bugfix-last",
+      "category": "bugfix",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00132672,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 482
+    },
+    {
+      "name": "bugfix-factorial",
+      "category": "bugfix",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00125228,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 423
+    },
+    {
+      "name": "bugfix-iseven",
+      "category": "bugfix",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00091612,
+      "requests": 3,
+      "hit": 3456,
+      "miss": 233
+    },
+    {
+      "name": "bugfix-max",
+      "category": "bugfix",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00139772,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 537
+    },
+    {
+      "name": "bugfix-reverse",
+      "category": "bugfix",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00116328,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 326
+    },
+    {
+      "name": "bugfix-count",
+      "category": "bugfix",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00121572,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 513
+    },
+    {
+      "name": "feat-clamp",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00133428,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 425
+    },
+    {
+      "name": "feat-unique",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00213744,
+      "requests": 5,
+      "hit": 6272,
+      "miss": 868
+    },
+    {
+      "name": "feat-chunk",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00202168,
+      "requests": 5,
+      "hit": 6784,
+      "miss": 640
+    },
+    {
+      "name": "feat-capitalize",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00166628,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 581
+    },
+    {
+      "name": "feat-average",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00217044,
+      "requests": 5,
+      "hit": 6272,
+      "miss": 937
+    },
+    {
+      "name": "feat-palindrome",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00234628,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 911
+    },
+    {
+      "name": "feat-titlecase-slug",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0038572000000000003,
+      "requests": 6,
+      "hit": 8960,
+      "miss": 1282
+    },
+    {
+      "name": "test-sum",
+      "category": "test",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00165016,
+      "requests": 4,
+      "hit": 4608,
+      "miss": 734
+    },
+    {
+      "name": "test-clamp",
+      "category": "test",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0019602800000000004,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 793
+    },
+    {
+      "name": "test-reverse",
+      "category": "test",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00240368,
+      "requests": 5,
+      "hit": 6784,
+      "miss": 748
+    },
+    {
+      "name": "test-iseven",
+      "category": "test",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00146684,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 419
+    },
+    {
+      "name": "refactor-rename",
+      "category": "refactor",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00175108,
+      "requests": 4,
+      "hit": 5504,
+      "miss": 365
+    },
+    {
+      "name": "refactor-extract-const",
+      "category": "refactor",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00148372,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 625
+    },
+    {
+      "name": "refactor-default-param",
+      "category": "refactor",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00176584,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 542
+    },
+    {
+      "name": "refactor-arrow",
+      "category": "refactor",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00143928,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 498
+    },
+    {
+      "name": "refactor-dedupe",
+      "category": "refactor",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00115284,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 443
+    },
+    {
+      "name": "refactor-guard",
+      "category": "refactor",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00165252,
+      "requests": 4,
+      "hit": 5376,
+      "miss": 383
+    },
+    {
+      "name": "hard-parse-duration",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.005371440000000001,
+      "requests": 4,
+      "hit": 6272,
+      "miss": 1658
+    },
+    {
+      "name": "hard-csv-row",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00792016,
+      "requests": 10,
+      "hit": 30208,
+      "miss": 2576
+    },
+    {
+      "name": "hard-paginate",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0037734799999999996,
+      "requests": 5,
+      "hit": 7424,
+      "miss": 1311
+    },
+    {
+      "name": "hard-email",
+      "category": "bugfix",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0057823200000000005,
+      "requests": 4,
+      "hit": 9216,
+      "miss": 384
+    },
+    {
+      "name": "hard-multifile-pipeline",
+      "category": "refactor",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0023785200000000003,
+      "requests": 4,
+      "hit": 5376,
+      "miss": 939
+    },
+    {
+      "name": "hard-statemachine",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.00171556,
+      "requests": 5,
+      "hit": 6528,
+      "miss": 625
+    },
+    {
+      "name": "hard-deepget",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0020535199999999997,
+      "requests": 4,
+      "hit": 5376,
+      "miss": 554
+    },
+    {
+      "name": "hard-romans",
+      "category": "feature",
+      "column": "flash",
+      "pass": true,
+      "cost": 0.0017130799999999999,
+      "requests": 4,
+      "hit": 5504,
+      "miss": 263
+    },
+    {
+      "name": "bugfix-add",
+      "category": "bugfix",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0007605600000000001,
+      "requests": 3,
+      "hit": 3328,
+      "miss": 304
+    },
+    {
+      "name": "bugfix-last",
+      "category": "bugfix",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0014346,
+      "requests": 4,
+      "hit": 4480,
+      "miss": 707
+    },
+    {
+      "name": "bugfix-factorial",
+      "category": "bugfix",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0011868399999999998,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 311
+    },
+    {
+      "name": "bugfix-iseven",
+      "category": "bugfix",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00113356,
+      "requests": 3,
+      "hit": 3328,
+      "miss": 389
+    },
+    {
+      "name": "bugfix-max",
+      "category": "bugfix",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00101856,
+      "requests": 3,
+      "hit": 3328,
+      "miss": 392
+    },
+    {
+      "name": "bugfix-reverse",
+      "category": "bugfix",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.001092,
+      "requests": 3,
+      "hit": 3200,
+      "miss": 480
+    },
+    {
+      "name": "bugfix-count",
+      "category": "bugfix",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0014067199999999998,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 542
+    },
+    {
+      "name": "feat-clamp",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00145316,
+      "requests": 4,
+      "hit": 4608,
+      "miss": 661
+    },
+    {
+      "name": "feat-unique",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0014771600000000001,
+      "requests": 4,
+      "hit": 4608,
+      "miss": 677
+    },
+    {
+      "name": "feat-chunk",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00230056,
+      "requests": 5,
+      "hit": 6528,
+      "miss": 920
+    },
+    {
+      "name": "feat-capitalize",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00149072,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 596
+    },
+    {
+      "name": "feat-average",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00167428,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 577
+    },
+    {
+      "name": "feat-palindrome",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0017728400000000001,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 499
+    },
+    {
+      "name": "feat-titlecase-slug",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0021474,
+      "requests": 4,
+      "hit": 5120,
+      "miss": 629
+    },
+    {
+      "name": "test-sum",
+      "category": "test",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0013084,
+      "requests": 4,
+      "hit": 5120,
+      "miss": 282
+    },
+    {
+      "name": "test-clamp",
+      "category": "test",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00202372,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 855
+    },
+    {
+      "name": "test-reverse",
+      "category": "test",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00277084,
+      "requests": 6,
+      "hit": 8192,
+      "miss": 1117
+    },
+    {
+      "name": "test-iseven",
+      "category": "test",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0014068400000000001,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 405
+    },
+    {
+      "name": "refactor-rename",
+      "category": "refactor",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00211536,
+      "requests": 5,
+      "hit": 7168,
+      "miss": 548
+    },
+    {
+      "name": "refactor-extract-const",
+      "category": "refactor",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0051611999999999995,
+      "requests": 4,
+      "hit": 4608,
+      "miss": 826
+    },
+    {
+      "name": "refactor-default-param",
+      "category": "refactor",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00428,
+      "requests": 3,
+      "hit": 3200,
+      "miss": 626
+    },
+    {
+      "name": "refactor-arrow",
+      "category": "refactor",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0043332,
+      "requests": 4,
+      "hit": 4608,
+      "miss": 716
+    },
+    {
+      "name": "refactor-dedupe",
+      "category": "refactor",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00131728,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 554
+    },
+    {
+      "name": "refactor-guard",
+      "category": "refactor",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.005282,
+      "requests": 4,
+      "hit": 5120,
+      "miss": 586
+    },
+    {
+      "name": "hard-parse-duration",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00742368,
+      "requests": 4,
+      "hit": 6784,
+      "miss": 2558
+    },
+    {
+      "name": "hard-csv-row",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00822696,
+      "requests": 10,
+      "hit": 27648,
+      "miss": 2756
+    },
+    {
+      "name": "hard-paginate",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00259464,
+      "requests": 4,
+      "hit": 5632,
+      "miss": 604
+    },
+    {
+      "name": "hard-email",
+      "category": "bugfix",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0068428000000000004,
+      "requests": 4,
+      "hit": 10240,
+      "miss": 364
+    },
+    {
+      "name": "hard-multifile-pipeline",
+      "category": "refactor",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0025330800000000005,
+      "requests": 4,
+      "hit": 5504,
+      "miss": 937
+    },
+    {
+      "name": "hard-statemachine",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00160568,
+      "requests": 5,
+      "hit": 6784,
+      "miss": 434
+    },
+    {
+      "name": "hard-deepget",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00423372,
+      "requests": 4,
+      "hit": 7936,
+      "miss": 337
+    },
+    {
+      "name": "hard-romans",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00394168,
+      "requests": 7,
+      "hit": 13184,
+      "miss": 972
+    },
+    {
+      "name": "bugfix-add",
+      "category": "bugfix",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00078656,
+      "requests": 3,
+      "hit": 3328,
+      "miss": 314
+    },
+    {
+      "name": "bugfix-last",
+      "category": "bugfix",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00143844,
+      "requests": 5,
+      "hit": 6272,
+      "miss": 505
+    },
+    {
+      "name": "bugfix-factorial",
+      "category": "bugfix",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00142672,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 586
+    },
+    {
+      "name": "bugfix-iseven",
+      "category": "bugfix",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00133672,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 490
+    },
+    {
+      "name": "bugfix-max",
+      "category": "bugfix",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00123756,
+      "requests": 3,
+      "hit": 3328,
+      "miss": 461
+    },
+    {
+      "name": "bugfix-reverse",
+      "category": "bugfix",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0012777200000000002,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 447
+    },
+    {
+      "name": "bugfix-count",
+      "category": "bugfix",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0015234399999999998,
+      "requests": 5,
+      "hit": 6272,
+      "miss": 594
+    },
+    {
+      "name": "feat-clamp",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00142872,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 564
+    },
+    {
+      "name": "feat-unique",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00214884,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 617
+    },
+    {
+      "name": "feat-chunk",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.002109,
+      "requests": 5,
+      "hit": 6400,
+      "miss": 905
+    },
+    {
+      "name": "feat-capitalize",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0016384400000000001,
+      "requests": 5,
+      "hit": 6272,
+      "miss": 611
+    },
+    {
+      "name": "feat-average",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0018729999999999999,
+      "requests": 5,
+      "hit": 6400,
+      "miss": 743
+    },
+    {
+      "name": "feat-palindrome",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0017204000000000002,
+      "requests": 4,
+      "hit": 5120,
+      "miss": 418
+    },
+    {
+      "name": "feat-titlecase-slug",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00241692,
+      "requests": 5,
+      "hit": 7296,
+      "miss": 657
+    },
+    {
+      "name": "test-sum",
+      "category": "test",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0014817200000000002,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 583
+    },
+    {
+      "name": "test-clamp",
+      "category": "test",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0014478400000000002,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 436
+    },
+    {
+      "name": "test-reverse",
+      "category": "test",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00113956,
+      "requests": 3,
+      "hit": 3328,
+      "miss": 481
+    },
+    {
+      "name": "test-iseven",
+      "category": "test",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0014262800000000003,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 501
+    },
+    {
+      "name": "refactor-rename",
+      "category": "refactor",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00217984,
+      "requests": 4,
+      "hit": 4992,
+      "miss": 888
+    },
+    {
+      "name": "refactor-extract-const",
+      "category": "refactor",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0040546,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 521
+    },
+    {
+      "name": "refactor-default-param",
+      "category": "refactor",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0043694,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 541
+    },
+    {
+      "name": "refactor-arrow",
+      "category": "refactor",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0037904,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 570
+    },
+    {
+      "name": "refactor-dedupe",
+      "category": "refactor",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00180372,
+      "requests": 4,
+      "hit": 4736,
+      "miss": 835
+    },
+    {
+      "name": "refactor-guard",
+      "category": "refactor",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0073486,
+      "requests": 4,
+      "hit": 4864,
+      "miss": 1083
+    },
+    {
+      "name": "hard-parse-duration",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00423792,
+      "requests": 4,
+      "hit": 7296,
+      "miss": 616
+    },
+    {
+      "name": "hard-csv-row",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0056122,
+      "requests": 8,
+      "hit": 15360,
+      "miss": 1487
+    },
+    {
+      "name": "hard-paginate",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00310632,
+      "requests": 4,
+      "hit": 6016,
+      "miss": 624
+    },
+    {
+      "name": "hard-email",
+      "category": "bugfix",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00543644,
+      "requests": 4,
+      "hit": 6272,
+      "miss": 1741
+    },
+    {
+      "name": "hard-multifile-pipeline",
+      "category": "refactor",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00246052,
+      "requests": 4,
+      "hit": 5376,
+      "miss": 929
+    },
+    {
+      "name": "hard-statemachine",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.0014266799999999998,
+      "requests": 5,
+      "hit": 6784,
+      "miss": 385
+    },
+    {
+      "name": "hard-deepget",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00250996,
+      "requests": 4,
+      "hit": 5248,
+      "miss": 609
+    },
+    {
+      "name": "hard-romans",
+      "category": "feature",
+      "column": "auto",
+      "pass": true,
+      "cost": 0.00242796,
+      "requests": 4,
+      "hit": 5248,
+      "miss": 731
+    }
+  ]
+}

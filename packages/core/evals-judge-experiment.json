@@ -1,0 +1,78 @@
+{
+  "baseline": [
+    {
+      "name": "email-plus",
+      "judged": false,
+      "pass": true,
+      "cost": 0.006935360000000001,
+      "requests": 5,
+      "retried": false,
+      "judgeWrong": false
+    },
+    {
+      "name": "parse-duration",
+      "judged": false,
+      "pass": true,
+      "cost": 0.008702320000000001,
+      "requests": 7,
+      "retried": false,
+      "judgeWrong": false
+    },
+    {
+      "name": "paginate-clamp",
+      "judged": false,
+      "pass": true,
+      "cost": 0.00356164,
+      "requests": 4,
+      "retried": false,
+      "judgeWrong": false
+    },
+    {
+      "name": "csv-escape",
+      "judged": false,
+      "pass": true,
+      "cost": 0.00478924,
+      "requests": 7,
+      "retried": false,
+      "judgeWrong": false
+    }
+  ],
+  "judged": [
+    {
+      "name": "email-plus",
+      "judged": true,
+      "pass": true,
+      "cost": 0.01818596,
+      "requests": 5,
+      "retried": false,
+      "judgeWrong": false
+    },
+    {
+      "name": "parse-duration",
+      "judged": true,
+      "pass": true,
+      "cost": 0.00814104,
+      "requests": 5,
+      "retried": false,
+      "judgeWrong": false
+    },
+    {
+      "name": "paginate-clamp",
+      "judged": true,
+      "pass": true,
+      "cost": 0.006373199999999999,
+      "requests": 5,
+      "retried": false,
+      "judgeWrong": false
+    },
+    {
+      "name": "csv-escape",
+      "judged": true,
+      "pass": true,
+      "cost": 0.006594919999999999,
+      "requests": 10,
+      "retried": false,
+      "judgeWrong": false
+    }
+  ]
+}
