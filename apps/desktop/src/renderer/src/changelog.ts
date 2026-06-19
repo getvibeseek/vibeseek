@@ -13,6 +13,12 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '1.0.1',
+    date: '2026-06-20',
+    zh: ['macOS 适配', 'macOS 下改动备份与一键回滚现已可用'],
+    en: ['macOS support', 'Change backup & one-click rollback now work on macOS'],
+  },
+  {
     version: '1.0.0',
     date: '2026-06-15',
     zh: [

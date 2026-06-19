@@ -18,7 +18,7 @@
 
 </div>
 
-> **A Windows desktop app, DeepSeek-native.** Latest: [download v1.0.0 →](https://github.com/getvibeseek/vibeseek/releases/latest)
+> **A Windows & macOS desktop app, DeepSeek-native.** Latest: [download v1.0.1 →](https://github.com/getvibeseek/vibeseek/releases/latest)
 
 ---
 
@@ -70,9 +70,17 @@ Real-API numbers (every case is verified by **importing the produced code and ru
 
 ## 📥 Install
 
-- **Download** `VibeSeek-Setup-*.exe` (Windows x64) from the [latest Release](https://github.com/getvibeseek/vibeseek/releases/latest).
-- The build is unsigned, so a first-run Windows SmartScreen prompt is expected — click **More info → Run anyway**.
-- Verify the download against the `SHA256SUMS.txt` on the same page.
+- **Windows**: `VibeSeek-Setup-*.exe` (x64) from the [latest Release](https://github.com/getvibeseek/vibeseek/releases/latest). Unsigned — a first-run SmartScreen prompt is expected; click **More info → Run anyway**.
+- **macOS**: `VibeSeek-*-arm64.dmg` (Apple Silicon) from the same page. Unsigned — on first open, right-click → **Open**, or allow it under **System Settings → Privacy & Security**; or run `xattr -dr com.apple.quarantine /Applications/VibeSeek.app`.
+- Verify downloads against the `SHA256SUMS.txt` on the same page.
+
+### About change backups
+
+One-click "roll back to before the task" relies on Git being installed; per-file / per-hunk accept & reject are unaffected and always work.
+
+- Without Git: only one-click rollback is unavailable — everything else works as usual.
+- Windows: install [Git for Windows](https://git-scm.com/download/win) (keep the defaults — it's added to PATH automatically).
+- macOS: run `xcode-select --install` in Terminal, or `brew install git` via Homebrew.
 
 ---
 

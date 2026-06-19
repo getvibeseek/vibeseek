@@ -12,14 +12,21 @@ export function createMainWindow(settings: SettingsStore): BrowserWindow {
   // a now-disconnected monitor doesn't open off-screen.
   const bounds = sanitizeBounds(saved.x, saved.y, saved.width, saved.height)
 
+  const isMac = process.platform === 'darwin'
+
   const win = new BrowserWindow({
     ...bounds,
     minWidth: 900,
     minHeight: 600,
-    frame: false,
-    titleBarStyle: 'hidden',
     show: false,
     backgroundColor: '#0e1015', // matches --bg-0 so the reveal doesn't flash
+    // macOS keeps its native traffic lights — titleBarStyle 'hidden' hides the
+    // bar but NOT the lights — and insets them so they sit centered in our 36px
+    // custom title bar instead of overlapping the "VibeSeek" wordmark. Windows
+    // and Linux are fully frameless and rely on the in-app min/max/close buttons.
+    ...(isMac
+      ? { titleBarStyle: 'hidden' as const, trafficLightPosition: { x: 14, y: 12 } }
+      : { frame: false, titleBarStyle: 'hidden' as const }),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       contextIsolation: true,

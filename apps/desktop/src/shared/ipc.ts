@@ -365,6 +365,8 @@ export type PermitGrant = 'once' | 'session' | 'project' | 'deny'
  * Renderer code calls `window.api.*`; main registers matching ipcMain handlers.
  */
 export interface AppApi {
+  /** Host OS, from process.platform (e.g. 'darwin', 'win32'). */
+  platform: NodeJS.Platform
   window: {
     minimize(): void
     maximize(): void

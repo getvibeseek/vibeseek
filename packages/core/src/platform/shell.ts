@@ -63,10 +63,40 @@ class PosixShell implements Shell {
     if (cwdError) return Promise.reject(cwdError)
     const child = spawn('/bin/sh', ['-c', command], {
       cwd: options.cwd,
-      env: { ...process.env, LANG: 'en_US.UTF-8', ...options.env },
+      env: {
+        ...process.env,
+        PATH: enhancePosixPath(process.env.PATH),
+        LANG: 'en_US.UTF-8',
+        ...options.env,
+      },
     })
     return collect(child, options.timeoutMs)
   }
+}
+
+/**
+ * macOS/Linux apps launched from Finder/Dock inherit a bare PATH from launchd —
+ * typically `/usr/bin:/bin:/usr/sbin:/sbin` — so Homebrew binaries (git, node,
+ * python…) under /opt/homebrew/bin or /usr/local/bin are invisible. That makes
+ * the git safety net silently no-op (isRepo() → false → no checkpoint) and
+ * breaks model-run commands. Append the well-known tool locations to whatever
+ * PATH we inherited — the inherited entries keep priority, so a terminal launch
+ * or a user-customized PATH still wins; we only add what's missing.
+ */
+export function enhancePosixPath(inherited: string | undefined = process.env.PATH): string {
+  const base = inherited ?? ''
+  const extra = [
+    '/opt/homebrew/bin', // Apple Silicon Homebrew
+    '/opt/homebrew/sbin',
+    '/usr/local/bin', // Intel Homebrew & many installers
+    '/usr/bin',
+    '/bin',
+    '/usr/sbin',
+    '/sbin',
+  ]
+  const seen = new Set(base.split(':').filter(Boolean))
+  const added = extra.filter((p) => !seen.has(p))
+  return [base, ...added].filter(Boolean).join(':')
 }
 
 function checkCwd(cwd?: string): Error | null {

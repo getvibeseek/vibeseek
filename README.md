@@ -18,7 +18,7 @@
 
 </div>
 
-> **Windows 桌面应用,DeepSeek 专属。** 最新版:[下载 v1.0.0 →](https://github.com/getvibeseek/vibeseek/releases/latest)
+> **Windows / macOS 桌面应用,DeepSeek 专属。** 最新版:[下载 v1.0.1 →](https://github.com/getvibeseek/vibeseek/releases/latest)
 
 ---
 
@@ -70,9 +70,17 @@ VibeSeek 想做好一件事:**让你愿意一直待在里面写代码**。舒服
 
 ## 📥 安装
 
-- **下载**:[最新 Release](https://github.com/getvibeseek/vibeseek/releases/latest) 里的 `VibeSeek-Setup-*.exe`(Windows x64)。
-- 未签名,首次运行 Windows SmartScreen 可能提示——点「更多信息 → 仍要运行」即可。
+- **Windows**:[最新 Release](https://github.com/getvibeseek/vibeseek/releases/latest) 里的 `VibeSeek-Setup-*.exe`(x64)。未签名,首次运行 SmartScreen 可能提示——点「更多信息 → 仍要运行」即可。
+- **macOS**:同页的 `VibeSeek-*-arm64.dmg`(Apple Silicon)。未签名,首次打开请右键点「打开」,或在「系统设置 → 隐私与安全性」中允许;也可在终端执行 `xattr -dr com.apple.quarantine /Applications/VibeSeek.app`。
 - 下载后可用同页的 `SHA256SUMS.txt` 校验完整性。
+
+### 关于改动备份
+
+「一键回滚到任务前」依赖系统已安装 Git;逐文件 / 逐段的接受、拒绝改动不受影响,始终可用。
+
+- 未安装 Git:仅「一键回滚」不可用,其余功能照常。
+- Windows:安装 [Git for Windows](https://git-scm.com/download/win)(保持默认选项即可,会自动加入 PATH)。
+- macOS:终端运行 `xcode-select --install`,或用 Homebrew 执行 `brew install git`。
 
 ---
 

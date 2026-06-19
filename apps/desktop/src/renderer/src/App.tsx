@@ -42,14 +42,17 @@ function App(): JSX.Element {
     })
   }, [])
 
-  // Developer panel (Ctrl+Shift+D) + conversation search (Ctrl+K).
+  // Developer panel (Ctrl/⌘+Shift+D) + conversation search (Ctrl/⌘+K).
+  // Accept the Cmd key on macOS, where Ctrl is rarely the modifier users reach
+  // for; Ctrl still works everywhere.
   useEffect(() => {
     const onKey = (e: KeyboardEvent): void => {
-      if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'd') {
+      const mod = e.metaKey || e.ctrlKey
+      if (mod && e.shiftKey && e.key.toLowerCase() === 'd') {
         e.preventDefault()
         setDevOpen((v) => !v)
       }
-      if (e.ctrlKey && !e.shiftKey && e.key.toLowerCase() === 'k') {
+      if (mod && !e.shiftKey && e.key.toLowerCase() === 'k') {
         e.preventDefault()
         setSearchOpen(true)
       }

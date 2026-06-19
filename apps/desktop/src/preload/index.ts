@@ -11,6 +11,9 @@ import {
 import type { Settings } from '../shared/settings'
 
 const api: AppApi = {
+  // Static OS tag so the renderer can branch chrome (macOS traffic lights vs.
+  // in-app window controls) without an async round-trip or a render flash.
+  platform: process.platform,
   window: {
     minimize: () => ipcRenderer.send(IPC.windowMinimize),
     maximize: () => ipcRenderer.send(IPC.windowMaximize),

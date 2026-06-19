@@ -7,6 +7,9 @@ export function TitleBar(): JSX.Element {
   const { t } = useTranslation()
   const [maximized, setMaximized] = useState(false)
   const pref = useThemePref()
+  // On macOS the native traffic lights handle close/minimize/zoom, so the
+  // in-app min/max/close buttons are redundant — only keep the theme toggle.
+  const isMac = window.api.platform === 'darwin'
 
   useEffect(() => {
     window.api.window.isMaximized().then(setMaximized)
@@ -37,51 +40,55 @@ export function TitleBar(): JSX.Element {
         >
           <ThemeIcon size={12} />
         </button>
-        <button
-          className="titlebar-btn"
-          aria-label="minimize"
-          onClick={() => window.api.window.minimize()}
-        >
-          <svg width="10" height="10" viewBox="0 0 10 10">
-            <line x1="1" y1="5" x2="9" y2="5" stroke="currentColor" strokeWidth="1" />
-          </svg>
-        </button>
-        <button
-          className="titlebar-btn"
-          aria-label="maximize"
-          onClick={() => window.api.window.maximize()}
-        >
-          <svg width="10" height="10" viewBox="0 0 10 10">
-            {maximized ? (
-              <path
-                d="M2.5 3.5V2h5.5v5.5H6.5M1 4h5.5v5.5H1z"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-              />
-            ) : (
-              <rect
-                x="1.5"
-                y="1.5"
-                width="7"
-                height="7"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-              />
-            )}
-          </svg>
-        </button>
-        <button
-          className="titlebar-btn titlebar-btn-close"
-          aria-label="close"
-          onClick={() => window.api.window.close()}
-        >
-          <svg width="10" height="10" viewBox="0 0 10 10">
-            <line x1="1" y1="1" x2="9" y2="9" stroke="currentColor" strokeWidth="1" />
-            <line x1="9" y1="1" x2="1" y2="9" stroke="currentColor" strokeWidth="1" />
-          </svg>
-        </button>
+        {!isMac && (
+          <>
+            <button
+              className="titlebar-btn"
+              aria-label="minimize"
+              onClick={() => window.api.window.minimize()}
+            >
+              <svg width="10" height="10" viewBox="0 0 10 10">
+                <line x1="1" y1="5" x2="9" y2="5" stroke="currentColor" strokeWidth="1" />
+              </svg>
+            </button>
+            <button
+              className="titlebar-btn"
+              aria-label="maximize"
+              onClick={() => window.api.window.maximize()}
+            >
+              <svg width="10" height="10" viewBox="0 0 10 10">
+                {maximized ? (
+                  <path
+                    d="M2.5 3.5V2h5.5v5.5H6.5M1 4h5.5v5.5H1z"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1"
+                  />
+                ) : (
+                  <rect
+                    x="1.5"
+                    y="1.5"
+                    width="7"
+                    height="7"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1"
+                  />
+                )}
+              </svg>
+            </button>
+            <button
+              className="titlebar-btn titlebar-btn-close"
+              aria-label="close"
+              onClick={() => window.api.window.close()}
+            >
+              <svg width="10" height="10" viewBox="0 0 10 10">
+                <line x1="1" y1="1" x2="9" y2="9" stroke="currentColor" strokeWidth="1" />
+                <line x1="9" y1="1" x2="1" y2="9" stroke="currentColor" strokeWidth="1" />
+              </svg>
+            </button>
+          </>
+        )}
       </div>
     </div>
   )

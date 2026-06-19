@@ -123,6 +123,12 @@ svg.lucide {
   -webkit-app-region: drag;
 }
 
+/* macOS: start the wordmark to the right of the native traffic lights so the
+   close/minimize/zoom buttons never sit on top of "VibeSeek". */
+:root[data-platform='darwin'] .titlebar-drag {
+  padding-left: 78px;
+}
+
 .titlebar-title {
   font-size: var(--fs-meta);
   font-weight: 500;
